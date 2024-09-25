@@ -1,0 +1,21 @@
+body {
+    background-color: rgb(212, 215, 215);
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .card {
+        margin-top: 20px;
+    }
+}
+
+.form-control {
+    padding: 10px;
+}
+
+.container {
+    margin-top: 20px;
+}

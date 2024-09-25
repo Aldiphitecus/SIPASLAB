@@ -1,0 +1,8 @@
+.text {
+    transition: 0.3s ease;
+}
+
+.text:hover {
+    background-color: rgb(61, 61, 61);
+    transform: translateX(8px);
+}
