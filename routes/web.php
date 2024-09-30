@@ -96,7 +96,7 @@ Route::middleware(['auth', 'userAkses:Admin'])->group(function () {
 
         Route::prefix('poli')->group(function () {
             Route::get('/semuadata', function () {
-                abort(403, 'maaf, halaman belum ada');
+                abort(403, 'halaman belum ada cuy');
             })->name('poli.index');
         });
 
