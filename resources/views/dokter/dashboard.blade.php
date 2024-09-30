@@ -1,7 +1,7 @@
 @extends('components.dokter-layout')
 
 @section('content')
-    <div class="card">
+    <div class="card mb-3">
         <div class="card-header">
             <h5 class="card-title"><i class="fa-solid fa-house"></i> SIPASLAB Dokter Portal</h5>
             <div class="card-tools"></div>
@@ -12,6 +12,16 @@
                     {{ session('success') }}
                 </div>
             @endif
+            <p>Selamat datang <span class="fw-bold">{{ $user->nama_user }}</span>, ini adalah halaman utama untuk portal
+                {{ $user->role }}.</p>
+        </div>
+    </div>
+    <div class="card mb-3">
+        <div class="card-header">
+            <h5 class="card-title"><i class="fa-solid fa-house"></i> SIPASLAB Dokter Portal</h5>
+            <div class="card-tools"></div>
+        </div>
+        <div class="card-body">
             <p>Selamat datang <span class="fw-bold">{{ $user->nama_user }}</span>, ini adalah halaman utama untuk portal
                 {{ $user->role }}.</p>
             <div class="row">
