@@ -22,8 +22,6 @@
             <div class="card-tools"></div>
         </div>
         <div class="card-body">
-            <p>Selamat datang <span class="fw-bold">{{ $user->nama_user }}</span>, ini adalah halaman utama untuk portal
-                {{ $user->role }}.</p>
             <div class="row">
                 <div class="col-xl-3 col-md-6">
                     <div class="card bg-primary text-white mb-4">
