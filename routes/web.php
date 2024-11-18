@@ -37,7 +37,7 @@ Route::get('/logout', [LoginController::class, 'logout']);
 // });
 
 
-Route::middleware(['auth', 'userAkses:Admin'])->group(function () {
+Route::middleware(['preventBack', 'auth', 'userAkses:Admin'])->group(function () {
     Route::prefix('admin')->group(function () {
         Route::get('/', [WelcomeController::class, 'index'])->name('admin.dashboard');
         Route::prefix('pemeriksaan')->group(function () {
@@ -115,7 +115,7 @@ Route::middleware(['auth', 'userAkses:Admin'])->group(function () {
     });
 });
 
-Route::middleware(['auth', 'userAkses:Dokter'])->group(function () {
+Route::middleware(['preventBack', 'auth', 'userAkses:Dokter'])->group(function () {
     Route::prefix('dokter')->group(function () {
         Route::get('/', [DokterWelcomeController::class, 'index']);
         Route::prefix('akun')->group(function () {
